@@ -1,0 +1,290 @@
+/* general tags ============================================================ */
+
+body,
+table,
+td {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 11px; }
+
+body {
+	background-color: #FFF;
+	color: #333; }
+
+p {
+	line-height: 1.5em;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 6px;
+	font-size: 95%; }
+	
+blockquote {
+	margin: .5em 2em;
+	padding: 0;
+}
+
+a {
+	color: #663; }
+
+a:link,
+a:visited {
+	text-decoration: none; }
+	
+a:hover,
+a:active {
+	text-decoration: underline; } 
+
+ul {
+	line-height: 1.5em; }
+
+/* main styles ============================================================ */
+
+#coltwo p {
+	font-family: georgia, times, 'Times New Roman', serif;
+	line-height: 1.4em;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 8px;
+	font-size: 102%; }
+	
+#coltwo td {
+	font-family: georgia, times, 'Times New Roman', serif;
+	line-height: 1.2em;
+	margin: 0px;
+	padding: 2px 0;
+	font-size: 102%; }
+	
+#coltwo a:link,
+#coltwo a:visited {
+	color: #35B;
+	text-decoration: none; }
+	
+#coltwo a:hover,
+#coltwo a:active {
+	text-decoration: underline; }
+
+#coltwo h1 {
+	margin: 0 0 10px 0;
+	font-size: 160%;
+	font-weight: normal;
+	color: #444;
+	padding: 0; }
+
+#coltwo h2 {
+	font-family: georgia, times, 'times new roman', serif; 
+	margin: 0 0 3px 0;
+	padding: 0;
+	font-size: 130%;
+	font-weight: normal;
+	color: #630; }
+
+#coltwo h3 {
+	font-family: georgia, times, 'times new roman', serif; 
+	margin: .5em 0px 0px 0px;
+	padding: 0;
+	font-size: 110%;
+	font-weight: normal;
+	color: #223; }
+
+#coltwo h4 {
+	margin: .5em 0px -10px 0;
+	padding: 0;
+	font-size: 95%;
+	font-weight: bold;
+	color: #960; }
+
+#coltwo h5 {
+	margin: .5em 0px 0px 0;
+	padding: 0;
+	font-size: 100%;
+	font-weight: bold;
+	color: #630; }
+
+#coltwo ul {
+	margin: 0px 0 0px 0;
+	padding: 0 0 0px 15px;	 }
+
+#coltwo li {
+	font-family: georgia, times, 'times new roman', serif;
+	line-height: 1.4em;
+	margin: 0;
+	padding: 0px 0 4px 0;
+	list-style: circle outside; }
+
+#colone h2 {
+	margin: 0 0 .2em 0;
+	padding: 0;
+	font-size: 90%;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #222; }
+	
+#colone p {
+	font-size: 92%;  
+	line-height: 1.4em;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 14px;}
+	
+#colone a,
+#colone a {
+	text-decoration: none;}
+
+#colone a:link,
+#colone a:visited,
+#colone a:link,
+#colone a:visited {
+	color: #336;
+	text-decoration: none; }
+
+#colone a:hover,
+#colone a:active,
+#colone a:hover,
+#colone a:active {
+	color: #666;
+	text-decoration: underline; }
+
+#colone a.current,
+#colone a.current {
+	color: #666; }
+	
+#colone ul {
+	margin: 5px 0 5px 0;
+	padding: 0 0 5px 15px;	 }
+
+#colone li {
+	margin: 0;
+	padding: 7px 0 0 0;
+	list-style: circle outside; }
+
+
+/* foot styles ============================================================ */
+
+#footer p {
+	font-weight: normal;
+	font-size: 85%;
+	line-height: 1.3em;
+	color: #777;
+	text-decoration: none; }
+	
+#footer a,
+#footer a:link,
+#footer a:visited {
+	font-weight: normal;
+	font-size: 100%;
+	text-decoration: none; }
+
+#footer a:hover,
+#footer a:active {
+	text-decoration: underline; }
+
+/* utility classes ====================================================== */
+
+div.clearFloats, .clearFloats {
+	clear: both;
+	line-height: 0px; 
+	height: 0px;
+	visibility: hidden; }
+
+div.noCollapse { /* keep divs from collapsing into contained elements */
+	padding: 1px 0px; } 
+
+.position  {
+    color: #666;
+    font-size: 100%; }
+
+.caption {
+	font-weight: normal;
+	font-size: 85%;
+	color: #369;
+	text-decoration: none;
+	padding: 3px;
+	margin-top: 2px;
+	margin-bottom: 2px; }
+
+#sidebar {
+	font-size: 10.1px;
+	text-align: left;
+	line-height: 1.2em; 
+	}
+	
+#sidebar h2 {
+	font-size: 130%;
+	font-family: georgia, times, 'Times New Roman', serif;
+	font-weight: normal;
+    margin-bottom: 4px;
+	}
+	
+#sidebar ul, #sidebar ul ol {
+	margin: 0;
+	padding: 0;
+	}
+
+#sidebar ul li {
+	list-style-type: none;
+	list-style-image: none;
+	margin-bottom: 3px;
+	}
+
+#sidebar ul p, #sidebar ul select {
+	margin: 0px 0 0px;
+	}
+
+#sidebar ul ul, #sidebar ul ol {
+	margin: 0px 0 0 0px;
+	}
+
+#sidebar ul ul ul, #sidebar ul ol {
+	margin: 0 0 0 0px;
+	}
+
+ol li, #sidebar ul ol li, 
+ol.commentlist  {
+	list-style-type: none;
+	list-style-image: none;
+	margin: 10px 0 0 0;
+	padding: 0px 0 0 12px;
+	}
+
+#sidebar ul ul li, #sidebar ul ol li {
+	margin: 3px 0 0;
+	padding: 0;
+	}
+	
+#coltwo p.big {
+	font-size: 125%;
+	color: #111;
+	text-decoration: none;
+	line-height: 1.2em;
+	font-style: italic; }
+
+.altrow {
+	background-color: #eee; }
+
+#coltwo td.labels {
+	font-family: verdana, Helvetica, Arial, Sans-serif;
+	font-size: 98%;
+	color: #222;
+	text-decoration: none;
+	line-height: 1.2em;
+	font-style: italic; }
+
+.formfield  {
+	background-color: #EEEEEE; 
+	border: 1px solid #999; 
+	width: 90px; 
+	color: #000; 
+	height: 13px; 
+	font-size: 100%; 
+	padding-left: 2px; 
+	padding-top: 4px;
+	margin-right: 4px;
+	margin-top: 3px;
+	margin-bottom: 2px; }
+
+.notebox {
+	border: 1px solid black;
+	width: 300px;
+	background: #D3E2E9;
+	padding: 5px 5px 0;
+	margin-bottom: 10px;
+}

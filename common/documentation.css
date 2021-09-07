@@ -1,0 +1,13 @@
+/*
+ * A style sheet for Sunnywood documentation that is delivered internally
+ * and for client instructions
+ */
+ 
+p,li  {font-family: georgia,times; font-size: 12px; font-weight: normal; color: #333; }
+h1 {font-family: georgia,times; font-size: 20px; font-weight: normal; color: #306; }
+h2 {font-family: georgia,times; font-size: 16px; font-weight: normal; color: #555; }
+h3 {font-family: georgia,times; font-size: 14px; font-weight: normal; color: #555; }
+a, a:link 	{color: #366;}
+a:visited, a:hover 	{color: #699;}
+
+

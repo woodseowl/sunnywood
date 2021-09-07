@@ -1,0 +1,78 @@
+/* basic structure ====================== */
+
+html, body {
+	margin: 0px;
+	padding: 0px 0px;
+	border: 0px;
+	background-color: #ddd; }
+
+/* ===== head ===== */
+
+#head-banner {
+	width: 664px;
+	margin: 0px auto;
+	padding: 10px 0 10px 0;}
+
+/* ===== main ===== */
+
+#main-framing { 
+	text-align: center;
+	margin-top: 0px;
+	background-color: #ddd; } 
+
+#main { 
+	position: relative;
+	width: 765px;
+	margin: -1px auto;
+	text-align: left;
+	background: #ddd url(../images/shadow_middle.gif) repeat-y; }
+
+#main-1 { 
+	width: 765px;
+	margin: 0px;
+	}
+
+#main-1a {
+	margin: 0px;
+	margin-bottom: -1px;}
+
+#colone {
+	width: 165px;
+	text-align: left;
+	padding: 13px 10px 10px 50px;
+	vertical-align: top; }
+
+#coltwo {
+	width: 410px;
+	text-align: left;
+	padding: 10px 0px 10px 0px;
+	vertical-align: top; }
+
+#colthree {
+	width: 150px;
+	text-align: right;
+	padding: 15px 12px 10px 10px;
+	vertical-align: top;
+	margin: 0px; }
+
+.photo {
+	border: 1px solid #CCC;
+	padding: 3px; }
+
+/* ===== foot ===== */
+
+#footer {
+	width: 715px;
+	margin: 0px auto;
+	text-align: left;
+	background-color: #ddd; 
+	margin-top: -14px;
+	margin-bottom: -1px;
+	padding-bottom: 30px;
+	padding-left: 50px;}
+
+.widecolumn {
+	width: 312px;}
+
+textarea {
+	width: 312px;}
