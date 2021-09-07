@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="ithaca web design">
+  <meta name="description" content="Sunnywood Design Collective is a group of hardworking web design professionals dedicated to improving Ithaca, New York and the world by helping to promote sustainable ventures and enliven our community.">
+
+  <title>Sunnywood Design | {{ title }}</title>
+
+  <link rel="shortcut icon" href="/images/sunnywood2.ico">
+  <link href="common/frame.css" rel="stylesheet" type="text/css" />
+  <link href="common/style.css" rel="stylesheet" type="text/css" />
+
+  <script type="text/javascript">
+    Array.prototype.sample = function(){
+      return this[Math.floor(Math.random()*this.length)];
+    }
+    img = [
+      'flower_1',
+      'lilacs',
+      'poppies',
+      'pinkies',
+      't-man',
+      'birchbark'
+    ].sample();
+
+    function newImage(arg) {
+      if (document.images) {
+        rslt = new Image();
+        rslt.src = arg;
+        return rslt;
+      }
+    }
+
+    function changeImages() {
+      if (document.images && (preloadFlag == true)) {
+        for (var i=0; i<changeImages.arguments.length; i+=2) {
+          document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+        }
+      }
+    }
+
+    var preloadFlag = false;
+    function preloadImages() {
+      if (document.images) {
+        idea_over = newImage("/images/" + img + "/idea-over.jpg");
+        people_over = newImage("/images/" + img + "/people-over.jpg");
+        portfolio_over = newImage("/images/" + img + "/portfolio-over.jpg");
+        services_over = newImage("/images/" + img + "/services-over.jpg");
+        process_over = newImage("/images/" + img + "/process-over.jpg");
+        contact_over = newImage("/images/" + img + "/contact-over.jpg");
+        preloadFlag = true;
+      }
+    }
+  </script>
+
+</head>
+
+<body onload="preloadImages();">
+
+<div id="main-framing"><div id="main" class="noCollapse">
+
+  <div id="main-1"><div id="main-1a">
+
+    <!-- ========================== header ============================= -->
+    <img src="images/shadow_top.gif" width="765" height="17" style="margin: -1px 0 20px 0;" alt="" />
+
+    <div id="head-banner">
+      <img src="images/{{ img }}/top.jpg" width="664" height="198" alt="Sunnywood Design Collective" /><br><img src="images/{{ img }}/left.jpg" width="168" height="22" alt="" /><a href="idea.php"
+          onmouseover="window.status='Our Idea'; changeImages('idea', 'images/{{ img }}/idea-over.jpg'); return true;"
+          onmouseout="window.status=''; changeImages('idea', 'images/{{ img }}/idea.jpg'); return true;"
+      ><img name="idea" src="images/{{ img }}/idea.jpg" alt="Our Idea" /></a>
+      <a href="people.php"
+         onmouseover="window.status='Sunnywood People'; changeImages('people', 'images/{{ img }}/people-over.jpg'); return true;"
+         onmouseout="window.status=''; changeImages('people', 'images/{{ img }}/people.jpg'); return true;"
+      ><img name="people" src="images/{{ img }}/people.jpg" alt="People" /></a>
+      <a href="portfolio.php"
+         onmouseover="window.status='Sunnywood Portfolio'; changeImages('portfolio', 'images/{{ img }}/portfolio-over.jpg'); return true;"
+         onmouseout="window.status=''; changeImages('portfolio', 'images/{{ img }}/portfolio.jpg'); return true;"
+      ><img name="portfolio" src="images/{{ img }}/portfolio.jpg" alt="Portfolio" /></a>
+      <a href="services.php"
+         onmouseover="window.status='Services at Sunnywood'; changeImages('services', 'images/{{ img }}/services-over.jpg'); return true;"
+         onmouseout="window.status=''; changeImages('services', 'images/{{ img }}/services.jpg'); return true;"
+      ><img name="services" src="images/{{ img }}/services.jpg" alt="Services" /></a>
+      <a href="process.php"
+         onmouseover="window.status='The Sunnywood Design Process'; changeImages('process', 'images/{{ img }}/process-over.jpg'); return true;"
+         onmouseout="window.status=''; changeImages('process', 'images/{{ img }}/process.jpg'); return true;"
+      ><img name="process" src="images/{{ img }}/process.jpg" alt="Process" /></a>
+      <a href="contact.php"
+         onmouseover="window.status='Contact Us at Sunnywood'; changeImages('contact', 'images/{{ img }}/contact-over.jpg'); return true;"
+         onmouseout="window.status=''; changeImages('contact', 'images/{{ img }}/contact.jpg'); return true;"
+      ><img name="contact" src="images/{{ img }}/contact.jpg" alt="Contact" /></a>
+      <img src="images/{{ img }}/right.jpg" width="147" height="22" alt="" />
+    </div>
+
+
+    <!-- END header -->
+
+    <table style="border-collapse: collapse">
+      <tr>
+
+        <!-- ===== COLUMN ONE - HIGHLIGHTS ========== -->
+        <td id="colone">
+          <? include('common/highlights.php'); ?>
+        </td>
+
+        <!-- ===== COLUMN TWO - CONTENT ========== -->
+        <td id="coltwo">
+          {{ content }}
+        </td>
+
+          <!-- ===== COLUMN THREE - HANDS ========== -->
+
+        <td id="colthree">
+          <div class="rightside">
+            <img src="images/hands.jpg" border="0" width="209" height="432" alt="Hands and Hearts" />
+          </div>
+        </td>
+      </tr>
+    </table>
+
+  </div></div>
+
+  <!-- ============================= footer ========================== -->
+
+  <img src="images/shadow_bottom.gif" width="765" height="17" border="0" style="margin: 0px 0 12px 0;" alt="" />
+
+  <div id="footer">
+    <p>Copyright &copy; 2008 Sunnywood Designs, Inc.<br />
+    <? if (IMG == 't-man') {
+	echo 'Image: Torrent&rsquo;s eyes cut to the chase. Photo: Paul Adkins';
+	} elseif (IMG == 'lilacs') {
+	echo 'Image: Lilacs blooming in Northeast Ohio, spring 2005. Photo: Paul Adkins';
+	} elseif (IMG == 'flower_1') {
+	echo 'Image: Black Eyed Susan blossom in the Finger Lakes, caught while riding the Bon Ton Roulet. Photo: Andrew Carothers Liske';
+	} elseif (IMG == 'pinkies') {
+	echo 'Image: Pink Yarrow, found on a walk down Albany Street, Ithaca. Photo: Paul Adkins';
+	} elseif (IMG == 'birchbark') {
+	echo 'Image: Birchbark from the Sunnywood Farm. Photo: Paul Adkins';
+	} elseif (IMG == 'lotus') {
+	echo 'Image: Lotus Flower, Ithaca Farmers Market 2005. Photo: Paul Adkins';
+	} elseif (IMG == 'poppies') {
+	echo 'Image: Poppies on the Sunnywood Farm bloom in early June. Photo: Paul Adkins';
+	} else {
+	echo '';
+	} ?></p></div>
+
+</div></div>
+
+</body>
+</html>
+
+</html>
